@@ -1,0 +1,8 @@
+<p>art card</p>
+<div class="art-card" *ngFor="let artPiece of artData">
+  <img
+    [src]="artPiece.imageUrl"
+    alt="{{ artPiece.title }}"
+    (click)="navigateToDetails(artPiece)"
+  />
+</div>
